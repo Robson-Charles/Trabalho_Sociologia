@@ -17,7 +17,37 @@ var perguntas = [
       pergunta: 'Amaternidade e a infância tém direito a cuidados e assistências especiais. Todas as crianças Nascidas dentro ou fora do matrimônio, gozarão da mesma proteção...',
       opcoes: ['Publica', 'Social', 'Maternal', 'Parental'],
       resposta: 1
-    }
+    },
+    {
+      pergunta: 'Todo ser humano tem direito a uma',
+      opcoes: ['Residencia', 'nacionalidade', 'Quentinha', 'igualdade'],
+      resposta: 1
+    },
+    {
+      pergunta: 'Qual é o princípio fundamental expresso na Declaração Universal dos Direitos Humanos sobre a igualdade e dignidade de todos os seres humanos?',
+      opcoes: ['Dinheiro', 'nacionalidade', 'Paz', 'igualdade'],
+      resposta: 3
+    },
+    {
+      pergunta: 'Esses direitos e liberdades não podem, em hipótese alguma, ser exercidos contrariamente aos propósitos e princípios das',
+      opcoes: ['Nações Unidas', 'Uniões', 'Entidades', 'igualdades'],
+      resposta: 0
+    },
+    {
+      pergunta: 'Qual direito fundamental garante igual remuneração por igual trabalho, sem distinção?',
+      opcoes: ['Igualdade salarial.', 'Descanso', 'Etinia', 'Genero'],
+      resposta: 0
+    },
+    {
+      Pergunta: 'Quais são os direitos fundamentais relacionados à vida, liberdade e segurança pessoal de todo ser humano?',
+      opcoes: ['Igualdade salarial.', 'Vida e liberdade.', 'Descanso e lazer', 'empatia e honestidade'],
+      resposta: 1
+    },
+    {
+      Pergunta: 'O que é audiência justa?',
+      opcoes: ['Corru´ção.', 'Dinheiro', 'Equidade', 'Votos'],
+      resposta: 2
+    },
   ];
   
  // Criar um array de objetos com as perguntas, as opções e a resposta correta
