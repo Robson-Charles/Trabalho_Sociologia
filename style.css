@@ -3,7 +3,17 @@ body {
   font-family: Arial, sans-serif; /* fonte da página */
   background-color: #f0f0f0; /* cor de fundo da página */
 }
+#principal{
+  border-radius: 50px;
+  background: linear-gradient(145deg, #959595, #b2b2b2);
+  box-shadow:  20px 20px 60px #8d8d8d,
+              -20px -20px 60px #bfbfbf;
 
+  width: 90vw;
+  height: 90vh;
+  padding: 2vh;
+
+}
 /* Estilo do título do quiz */
 h1 {
   text-align: center; /* alinhamento do texto */
@@ -15,23 +25,55 @@ h1 {
   font-size: 20px; /* tamanho da fonte */
   font-weight: bold; /* peso da fonte */
   margin: 20px; /* margem do elemento */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilo do elemento das opções */
-#opcoes {
-  margin: 20px; /* margem do elemento */
-}
+
 
 /* Estilo dos elementos input do tipo radio */
 input[type=radio] {
   margin-right: 10px; /* margem direita do elemento */
+  
+  cursor: pointer;
+  display: none;
+  
 }
+
+label {
+  cursor: pointer;
+}
+
 
 /* Estilo do elemento do resultado */
 #resultado {
   font-size: 18px; /* tamanho da fonte */
   margin: 20px; /* margem do elemento */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+#opcoes{
+  margin: 20px; /* margem do elemento */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input[type=radio]:checked + label {
+  padding: 1vh;
+  border-radius: 33px;
+  border-radius: 50px;
+  background: #4a7578;
+  box-shadow:  20px 20px 60px #3f6366,
+              -20px -20px 60px #55878a;
+}
+
 
 /* Estilo do botão de próximo */
 #proximo {
@@ -41,5 +83,10 @@ input[type=radio] {
   border: none; /* borda do elemento */
   background-color: #333333; /* cor de fundo do elemento */
   color: white; /* cor do texto */
+  border-radius: 50px;
+  background: #454545;
+  box-shadow:  20px 20px 60px #3b3b3b,
+              -20px -20px 60px #4f4f4f;
+  cursor: pointer;
 }
 

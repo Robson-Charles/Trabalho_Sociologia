@@ -53,11 +53,15 @@ var perguntas = [
       var input = document.createElement("input");
       input.type = "radio";
       input.name = "opcao";
+      input.id = opcoes[i];
       input.value = i;
   
       // Criar um elemento label com o texto da opção
       var label = document.createElement("label");
       label.textContent = opcoes[i];
+      label.value = i;
+      label.htmlFor = opcoes[i];
+
   
       // Criar um elemento br para quebrar a linha
       var br = document.createElement("br");
@@ -79,11 +83,13 @@ var perguntas = [
   
     // Criar uma variável para armazenar a opção selecionada pelo usuário
     var selecionada = null;
-  
+ 
     // Criar um loop para percorrer as opções e verificar qual delas está marcada
+    
     for (var i = 0; i < opcoes.length; i++) {
       if (opcoes[i].checked) {
         // Atribuir o valor da opção marcada à variável selecionada
+        
         selecionada = opcoes[i].value;
         break; // interromper o loop se encontrar a opção marcada
       }
@@ -95,20 +101,25 @@ var perguntas = [
       if (selecionada == resposta) {
         // Se forem iguais, incrementar o número de acertos em um
         acertos++;
+        for (var i = 0; i < opcoes.length; i++) {
+          opcoes[i].disabled = true
+        }
         // Mostrar uma mensagem de parabéns no elemento HTML do resultado
         elementoResultado.textContent = "Parabéns, você acertou!";
-        elementoResultado.style.color = "green"; // mudar a cor do texto para verde
+        elementoResultado.style.color = "green";
+        
+         // mudar a cor do texto para verde
       } else {
+        for (var i = 0; i < opcoes.length; i++) {
+      opcoes[i].disabled = true
+    }
         // Se forem diferentes, mostrar uma mensagem de erro no elemento HTML do resultado
         elementoResultado.textContent = "Que pena, você errou!";
         elementoResultado.style.color = "red"; // mudar a cor do texto para vermelho
       }
       // Habilitar o botão de próximo
       elementoProximo.disabled = false;
-    } else {
-      // Se a variável selecionada for nula, mostrar uma mensagem de alerta para o usuário marcar uma opção
-      alert("Por favor, marque uma opção!");
-    }
+    } 
   }
   
   // Criar uma função para mostrar a próxima pergunta ou o resultado final
