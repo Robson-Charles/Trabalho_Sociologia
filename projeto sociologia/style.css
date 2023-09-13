@@ -1,0 +1,45 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif; /* fonte da página */
+  background-color: #f0f0f0; /* cor de fundo da página */
+}
+
+/* Estilo do título do quiz */
+h1 {
+  text-align: center; /* alinhamento do texto */
+  color: #333333; /* cor do texto */
+}
+
+/* Estilo do elemento da pergunta */
+#pergunta {
+  font-size: 20px; /* tamanho da fonte */
+  font-weight: bold; /* peso da fonte */
+  margin: 20px; /* margem do elemento */
+}
+
+/* Estilo do elemento das opções */
+#opcoes {
+  margin: 20px; /* margem do elemento */
+}
+
+/* Estilo dos elementos input do tipo radio */
+input[type=radio] {
+  margin-right: 10px; /* margem direita do elemento */
+}
+
+/* Estilo do elemento do resultado */
+#resultado {
+  font-size: 18px; /* tamanho da fonte */
+  margin: 20px; /* margem do elemento */
+}
+
+/* Estilo do botão de próximo */
+#proximo {
+  display: block; /* tipo de exibição do elemento */
+  margin: 20px auto; /* margem automática do elemento */
+  padding: 10px; /* preenchimento do elemento */
+  border: none; /* borda do elemento */
+  background-color: #333333; /* cor de fundo do elemento */
+  color: white; /* cor do texto */
+}
+
